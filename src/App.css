@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+  font-family: Prismriver , sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  color: rgb(239, 239, 1);
+}
+
+/* thead, table, td {
+  border: 1px solid #333;
+}
+
+thead, tfoot {
+  background-color: rgb(51, 51, 51);
+  color: white;
+} */
+
+table {
+  border: 2px solid rgb(239, 239, 1);
+  border-radius: 4px;
+  filter: drop-shadow(0 -1px 16px rgb(239, 239, 1));
+}
+
+th {
+  background-color: rgb(239, 239, 1, 0.5);
+  color: black;
+  padding: 5px;
+}
+
+td {
+  color: rgb(239, 239, 1);
+}
+
+thead, th, tbody, td {
+  border: 2px solid rgb(239, 239, 1);
+  border-radius: 4px;
+}
+
+thead, table, td {
+  font-size: 12px;
+  min-height: 60px;
+  padding: 4px;
+  text-align: center;
+}
+
+thead {
+  background-color: rgb(3, 3, 3, 0.1);
+}
+
+tbody {
+  background-color: rgb(3, 3, 3, 0.1);
+  color: rgb(51, 51, 51);
+  font-weight: 700;
+}
+
+.table-container {
+  display: flex;
+  justify-content: flex-start;
+  min-width: 370px;
+  overflow-x: scroll;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.starWas-logo {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+.starWas-logo img {
+  width: 300px;
+}
+
+.filter-container {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 50px;
+  padding: 5px;
+}
+
+.filter-container p {
+  display: flex;
+  padding: 5px;
+}
+
+button {
+  background-color: rgba(3, 3, 3, 0.5);
+  border: 2px solid rgb(239, 239, 1);
+  border-radius: 4px;
+  color: rgb(239, 239, 1);
+  filter: drop-shadow(0 -1px 16px rgb(239, 239, 1));
+  margin: 5px;
+  min-width: 160px;
+}
+
+button:hover {
+  color: white;
+}
+
+.filter-container button {
+  background-color: rgba(3, 3, 3, 0.5);
+  border: 2px solid rgb(239, 239, 1);
+  border-radius: 4px;
+  color: rgb(239, 239, 1);
+  filter: drop-shadow(0 -1px 16px rgb(239, 239, 1));
+  margin: 5px;
+  min-width: 20px;
+}
+
+.filter-container button:hover {
+  color: white;
+}
+
+form {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+form select, input {
+  background-color: rgb(239, 239, 1, 0.5);
+  border: 2px solid rgb(239, 239, 1);
+  border-radius: 4px;
+  filter: drop-shadow(0 -1px 16px rgb(239, 239, 1));
+  margin: 5px;
+  text-align: center;
+  width: 160px;
+}
+
+.input-radio {
+  width: auto;
+}
+
+.form-selects {
+  align-content: center;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+
+@media screen and ( min-width : 600px ) {
+
+  body {
+    align-items: center;
+    display: flex;
+  }
+
+  .starWas-logo img {
+    width: 600px;
+  }
+
+  form {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .form-selects {
+    flex-direction: row;
+  }
+
+  .radio-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .table-container {
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    overflow-x: unset;
+  }
+
+}
